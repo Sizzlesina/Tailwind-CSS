@@ -22,4 +22,8 @@
 @ - flex-col is used to positioning flex items vertically and flex-row is used for positioning flex items horizontally
 
 @ As simple as the name justify-(utility) is used for justify content of the flex items and items-(utility) is used for align items of the flex items
+
+
+*Breakpoints in Tailwind:
+- When we set set a class for a breakpoint we mean that if we reach above the breakpoint then apply the style for it
 */

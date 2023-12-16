@@ -2,19 +2,13 @@
 
 function App() {
   return (
-    <div className=" grid h-screen grid-cols-6">
-      <div className="h-12 w-12 bg-green-500">Hello</div>
-      <div className="h-12 w-12 bg-red-500">My</div>
-      <div className="h-12 w-12 bg-blue-500">Friend</div>
-      <div className="h-12 w-12 bg-green-500">Hello</div>
-      <div className="h-12 w-12 bg-red-500">My</div>
-      <div className="h-12 w-12 bg-blue-500">Friend</div>
-      <div className="h-12 w-12 bg-green-500">Hello</div>
-      <div className="h-12 w-12 bg-red-500">My</div>
-      <div className="h-12 w-12 bg-blue-500">Friend</div>
-      <div className="h-12 w-12 bg-green-500">Hello</div>
-      <div className="h-12 w-12 bg-red-500">My</div>
-      <div className="h-12 w-12 bg-blue-500">Friend</div>
+    <div className="text-4xl">
+      <div className="invisible">base</div>
+      <div className="invisible sm:visible">sm</div>
+      <div className="invisible md:visible">md</div>
+      <div className="invisible lg:visible">lg</div>
+      <div className="invisible xl:visible">xl</div>
+      <div className="invisible 2xl:visible">2xl</div>
     </div>
   );
 }
