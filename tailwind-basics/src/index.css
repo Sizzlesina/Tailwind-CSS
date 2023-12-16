@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   h1 {
     @apply text-4xl font-bold;
   }
@@ -23,4 +23,4 @@
   .flex-center {
     @apply flex items-center justify-center;
   }
-}
+} */
