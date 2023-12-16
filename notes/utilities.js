@@ -26,4 +26,10 @@
 
 *Breakpoints in Tailwind:
 - When we set set a class for a breakpoint we mean that if we reach above the breakpoint then apply the style for it
+
+* Customizing theme:
+- We can add some classes in the tailwind.config.js/theme by writing the new class in the theme/extend array but we must look up to the default codes of Tailwind
+
+* Refrence:
+Tailwind color generator (site that we use for generating Tailwind colors)
 */
