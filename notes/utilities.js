@@ -32,4 +32,29 @@
 
 * Refrence:
 Tailwind color generator (site that we use for generating Tailwind colors)
+
+* Layers:
+- We can change layes in Tailwind by writing the @layer (name of the layer) then change the styles using @apply
+++ Example:
+- This layer is used for custom classed for styling
+@ @layer components{
+  .btn-red{
+    @apply bg-red-500
+  }
+}
+- This layer is used for directive positions and stuff
+@ @layer directives{
+  .flex-center{
+    @apply flex items-center justify-center
+  }
+}
+
+- This layer is used for default element stlyes 
+@ @layer base{
+  p {
+    @apply text-stone-500
+  }
+}
+
+
 */
