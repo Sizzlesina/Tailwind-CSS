@@ -1,12 +1,11 @@
 /** @format */
 
 import Nav from "./components/Nav";
-import Select from "./components/Select";
 import ShoeDetai from "./components/ShoeDetail";
 
 function App() {
   return (
- <div className="p-10 xl:px-24 ">
+ <div className="p-10 xl:px-24 animate-fadeIn">
   <Nav />
   <ShoeDetai />
  </div>
