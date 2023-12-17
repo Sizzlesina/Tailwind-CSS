@@ -57,5 +57,8 @@
   }
 }
 
+* Animation: 
+- When we use a animation like hover:scale-(value) we can use transition but in the documentation says that we also need to use transform otherwise we can have weird behaviors
+
 
 */
