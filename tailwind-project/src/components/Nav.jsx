@@ -1,9 +1,12 @@
+import { TbShoppingBag } from "react-icons/tb";
 import NikeLogo from "../assets/nike-logo.svg?react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useState } from "react";
 
 const ROUTES = ["Home", "About", "Services", "Pricing", "Contact"];
 
 function Nav() {
+  const [isMobileMenuShown, setIsMobileMenuShown] = useState(false);
   return (
     <nav className="flex flex-wrap items-center justify-between ">
       {/* Logo */}
@@ -12,17 +15,26 @@ function Nav() {
       </a>
 
       {/* Burger Button */}
-      <button className="rounded-lg p-2 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200">
+      <button
+        className="rounded-lg p-2 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 lg:hidden"
+        onClick={() => setIsMobileMenuShown(() => !isMobileMenuShown)}
+      >
         <RxHamburgerMenu size={25} />
       </button>
 
       {/* Menu list*/}
-      <div className="w-full ">
-        <ul className="rounded-lg border border-gray-100 bg-gray-50 p-4 text-lg">
+      <div
+        className={`${
+          !isMobileMenuShown  && "hidden"
+        } w-full lg:block lg:w-auto`}
+      >
+        <ul className=" flex flex-col rounded-lg border border-gray-100  bg-gray-50 p-4 text-lg lg:w-auto lg:flex-row lg:space-x-8 lg:border-none lg:bg-transparent">
           {ROUTES.map((route, index) => (
             <li
               className={`cursor-pointer rounded px-3 py-2 ${
-                index === 0 ? "bg-blue-500 text-white" : "hover:bg-gray-100"
+                index === 0
+                  ? "bg-blue-500 text-white lg:bg-transparent lg:text-blue-500"
+                  : "hover:bg-gray-100"
               }`}
               key={route}
             >
@@ -30,6 +42,13 @@ function Nav() {
             </li>
           ))}
         </ul>
+      </div>
+
+      {/* Cart button */}
+      <div className="fixed bottom-4 left-4 lg:static ">
+        <div className="flex-center h-12 w-12 rounded-full bg-white shadow-md ">
+          <TbShoppingBag />
+        </div>
       </div>
     </nav>
   );
