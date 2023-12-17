@@ -2,10 +2,10 @@ import nike1 from "../assets/n1-min.png";
 function ShoeDetai() {
   return (
     <div className="flex flex-col space-y-4 lg:flex-row-reverse ">
-      {/* Show image */}
-      <div className="flex-1 ">
+      {/* Shoe image */}
+      <div className="flex-1 lg:-mt-32 lg:ml-28 ">
         {/* it starting from bottom left to bottom right */}
-        <div className="from-5 via-40 bg-gradient-to-br from-[#F637CF] via-[#E3D876] to-[#4DD4C6]">
+        <div className="flex-center h-full bg-gradient-to-br from-[#F637CF]  from-5% via-[#E3D876] via-40% to-[#4DD4C6]">
           <img src={nike1} alt="Nike shoe number 1" />
         </div>
       </div>
