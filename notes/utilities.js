@@ -31,7 +31,8 @@
 - We can add some classes in the tailwind.config.js/theme by writing the new class in the theme/extend array but we must look up to the default codes of Tailwind
 
 * Refrence:
-Tailwind color generator (site that we use for generating Tailwind colors)
+- Tailwind color generator (site that we use for generating Tailwind colors)
+- Font source (site that we can get fonts from and install them as a package and import them in the main.jsx file)
 
 * Layers:
 - We can change layes in Tailwind by writing the @layer (name of the layer) then change the styles using @apply
