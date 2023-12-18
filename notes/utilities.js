@@ -79,4 +79,8 @@ function Component({className}){
     <h2 className={twMerge(`p-x-2 p-y-2 ${className}`,)}>Text</h2>
   )
 }
+
+* END FOLDER:
+- We can check on that later it's about making the application dynamic
+
 */
