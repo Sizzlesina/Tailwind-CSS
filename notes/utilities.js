@@ -63,4 +63,20 @@
 * Grid:
 - For spacing in the grid system we use gap
 
+* Tailwind merge:
+- When we using a class in the end of the other classes like adding the p-44 at the end of an element which has p-x-2 and p-y-2 then the padding x and padding y will have an presidence over the padding class then we should use the tailwind merge library:
+
+++ Npm command:
+ - npm i tw-merge
+
+++ Then we import the tailwind merge to the file that we want to merge the class:
+import {twMerge} from "tw-merge";
+
+++ Then we will send the entire string of the element className:
+function Component({className}){
+  (the className={"p-44"})
+  return (
+    <h2 className={twMerge(`p-x-2 p-y-2 ${className}`,)}>Text</h2>
+  )
+}
 */
