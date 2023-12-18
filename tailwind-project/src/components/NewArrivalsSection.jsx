@@ -3,7 +3,7 @@ import  Card  from "./Card";
   return (
     <div className="mt-20">
       <div className="flex-center">
-        <div className="bg-[url('./assets/lines.png')] bg-center text-4xl font-extrabold">
+        <div className="dark:text-white bg-[url('./assets/lines.png')] bg-center text-4xl font-extrabold">
           NEW ARRIVALS
         </div>
       </div>

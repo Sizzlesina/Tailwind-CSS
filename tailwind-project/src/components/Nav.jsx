@@ -11,12 +11,12 @@ function Nav({ onClickShoppingBtn }) {
     <nav className="relative z-10 flex flex-wrap items-center justify-between">
       {/* Logo */}
       <a href="something">
-        <NikeLogo className="h-20 w-20" />
+        <NikeLogo className="h-20 w-20 dark:fill-white" />
       </a>
 
       {/* Burger Button */}
       <button
-        className="rounded-lg p-2 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 lg:hidden"
+        className=" rounded-lg p-2 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 lg:hidden"
         onClick={() => setIsMobileMenuShown(() => !isMobileMenuShown)}
       >
         <RxHamburgerMenu size={25} />
@@ -28,7 +28,7 @@ function Nav({ onClickShoppingBtn }) {
           !isMobileMenuShown && "hidden"
         } w-full lg:block lg:w-auto`}
       >
-        <ul className=" flex flex-col rounded-lg border border-gray-100  bg-gray-50 p-4 text-lg lg:w-auto lg:flex-row lg:space-x-8 lg:border-none lg:bg-transparent">
+        <ul className=" flex flex-col rounded-lg border border-gray-100  bg-gray-50 p-4 text-lg lg:w-auto lg:flex-row lg:space-x-8 lg:border-none lg:bg-transparent dark:lg:text-white">
           {ROUTES.map((route, index) => (
             <li
               className={`cursor-pointer rounded px-3 py-2 lg:hover:bg-transparent lg:hover:text-blue-500 ${
