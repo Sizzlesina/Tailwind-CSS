@@ -10,7 +10,7 @@ function Nav() {
   return (
     <nav className="relative z-10 flex flex-wrap items-center justify-between">
       {/* Logo */}
-      <a href="#">
+      <a href="something">
         <NikeLogo className="h-20 w-20" />
       </a>
 
