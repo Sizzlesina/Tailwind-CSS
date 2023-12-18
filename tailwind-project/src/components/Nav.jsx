@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const ROUTES = ["Home", "About", "Services", "Pricing", "Contact"];
 
-function Nav() {
+function Nav({ onClickShoppingBtn }) {
   const [isMobileMenuShown, setIsMobileMenuShown] = useState(false);
   return (
     <nav className="relative z-10 flex flex-wrap items-center justify-between">
@@ -45,7 +45,10 @@ function Nav() {
       </div>
 
       {/* Cart button */}
-      <div className="btn-press-anim fixed bottom-4 left-4 lg:static lg:mr-8 ">
+      <div
+        onClick={onClickShoppingBtn}
+        className="btn-press-anim fixed bottom-4 left-4 lg:static lg:mr-8 "
+      >
         <div className="flex-center h-12 w-12 cursor-pointer rounded-full bg-white shadow-md ">
           <TbShoppingBag />
         </div>
