@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import Card from "./components/Card";
 import Nav from "./components/Nav";
 import NewArrivalsSection from "./components/NewArrivalsSection";
-import ShoeDetai from "./components/ShoeDetail";
+import ShoeDetail from "./components/ShoeDetail";
 import Sidebar from "./components/Sidebar";
 import { SHOE_LIST } from "./constant";
 import Cart from "./components/Cart";
@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="dark:bg-night animate-fadeIn p-10 xl:px-24">
       <Nav onClickShoppingBtn={() => setIsSidebarOpen(true)} />
-      <ShoeDetai />
+      <ShoeDetail />
       <NewArrivalsSection items={SHOE_LIST} />
       <Sidebar
         isOpen={isSidebarOpen}

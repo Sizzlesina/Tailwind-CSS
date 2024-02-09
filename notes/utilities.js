@@ -82,5 +82,5 @@ function Component({className}){
 
 * END FOLDER:
 - We can check on that later it's about making the application dynamic
-
+cd 
 */
