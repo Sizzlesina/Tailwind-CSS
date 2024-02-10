@@ -1,6 +1,7 @@
- function Card({ item }) {
+function Card({ item, onClick }) {
   return (
     <div
+      onClick={() => onClick(item)}
       className={`${item.className} max-w-xl transform cursor-pointer transition hover:scale-105`}
     >
       <div className="p-8">
@@ -11,7 +12,8 @@
       </div>
       <img
         className="absolute left-[50%] top-5 h-40"
-        src={item.src} alt={item.title}
+        src={item.src}
+        alt={item.title}
       />
     </div>
   );

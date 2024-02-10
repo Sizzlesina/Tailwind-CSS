@@ -5,11 +5,11 @@ function CartItem({ item: { product, qty, size } }) {
   return (
     <div
       className={
-        "dark:hover:bg-night-50 cursor-pointer space-y-2 bg-gray-50 p-2 hover:bg-[#DAFFA2] dark:bg-transparent"
+        "cursor-pointer space-y-2 bg-gray-50 p-2 hover:bg-[#DAFFA2] dark:bg-transparent dark:hover:bg-night-50"
       }
     >
       <div className="flex space-x-2 ">
-        {/* Image */}
+        x{/* Image */}
         <img className="h-24" src={product.src} alt={product.title} />
         <div className="space-y-2">
           {/* Title & Description */}
